@@ -1,0 +1,12 @@
+[project]
+name = "naming-check"
+version = "1.0.0"
+description = "Audit and fix Wwise object names against a per-project naming convention."
+authors = [{ name = "Kevin PANCHOUT" }]
+license = "MIT"
+requires-python = ">=3.10"
+
+# waapi-client ships no type annotations (no py.typed, no stubs).
+[[tool.mypy.overrides]]
+module = ["waapi", "waapi.*"]
+ignore_missing_imports = true

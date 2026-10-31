@@ -1,0 +1,26 @@
+{
+    "commands": [
+        {
+            "id": "naming_check.audit",
+            "displayName": "Audit",
+            "program": "python",
+            "args": "\"${CurrentCommandDirectory}/../../script/naming_check.py\"",
+            "startMode": "MultipleSelectionSingleProcess",
+            "redirectOutputs": true,
+            "mainMenu": {
+                "basePath": "Extensions/Naming Check"
+            }
+        },
+        {
+            "id": "naming_check.apply_fixes",
+            "displayName": "Apply fixes",
+            "program": "python",
+            "args": "\"${CurrentCommandDirectory}/../../script/naming_check.py\" --apply",
+            "startMode": "MultipleSelectionSingleProcess",
+            "redirectOutputs": true,
+            "mainMenu": {
+                "basePath": "Extensions/Naming Check"
+            }
+        }
+    ]
+}
