@@ -456,7 +456,10 @@ def _print_summary(summary: Summary) -> None:
     print(f"  {len(summary.issues)} not compliant")
     print(f"    {len(summary.fixable)} with a certain fix")
     if not summary.applied:
-        print("Audit only: nothing renamed. Apply the fixes with --apply.")
+        print(
+            "Audit only: nothing renamed. Apply the fixes with --apply "
+            "or Extensions > Naming Check > Apply fixes."
+        )
         return
     print(f"{summary.renamed} names fixed")
     for failure in summary.failures:

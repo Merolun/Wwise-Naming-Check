@@ -1,5 +1,17 @@
 # Naming Check
 
+Keep the names of your Wwise project consistent without checking them by hand.
+Naming Check audits every SFX Sound and Music Track against your project's own
+naming convention, then fixes the unambiguous mistakes in one undoable step. It
+adds an **Extensions > Naming Check** menu to Wwise.
+
+**Who it is for:** audio designers, technical sound designers and audio
+programmers working in Wwise, especially in teams where several people name
+objects and the project is shared through Perforce or SVN. Python is only needed
+to run the script; no coding is required to use the menu.
+
+![Naming Check menu and audit report in the Wwise Logs view](images/naming-check-menu-and-logs.png)
+
 Audits the names of the SFX Sounds and Music Tracks of the Wwise project
 currently open against that project's own naming convention, through the Wwise
 Authoring API (WAAPI).
